@@ -1,0 +1,5 @@
+PRIVATE ARCHIVE — DO NOT SHARE
+
+This archive contains .env.local (APP_SECRET and administrator password) and
+LOCAL_CREDENTIALS.txt. Anyone with this ZIP can sign in to a local instance built from it.
+Use it only on your own machine. Rotate credentials before any shared or production deployment.

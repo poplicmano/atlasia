@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  border-color: #26282c;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: #08090a;
+  color: #f4f4f5;
+}
+
+body {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #8f2634;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0e10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b2d31;
+  border: 2px solid #0d0e10;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3d42;
+}
+
+input[type="color"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: 1px solid #3a3d42;
+  border-radius: 0.5rem;
+}
+
+.rich-content .tiptap {
+  outline: none;
+  color: #d9dade;
+  font-size: 0.94rem;
+  line-height: 1.65;
+  min-width: 0;
+}
+
+.rich-content .tiptap > * + * {
+  margin-top: 0.8rem;
+}
+
+.rich-content .tiptap p {
+  margin: 0;
+}
+
+.rich-content .tiptap h1,
+.rich-content .tiptap h2,
+.rich-content .tiptap h3 {
+  color: #f4f4f5;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.rich-content .tiptap h1 {
+  font-size: 1.55rem;
+}
+
+.rich-content .tiptap h2 {
+  font-size: 1.3rem;
+}
+
+.rich-content .tiptap h3 {
+  font-size: 1.1rem;
+}
+
+.rich-content .tiptap ul,
+.rich-content .tiptap ol {
+  padding-left: 1.35rem;
+}
+
+.rich-content .tiptap ul {
+  list-style: disc;
+}
+
+.rich-content .tiptap ol {
+  list-style: decimal;
+}
+
+.rich-content .tiptap li {
+  margin: 0.2rem 0;
+}
+
+.rich-content .tiptap li p {
+  margin: 0;
+}
+
+.rich-content .tiptap blockquote {
+  border-left: 3px solid #8f2634;
+  padding-left: 0.9rem;
+  color: #a1a1aa;
+}
+
+.rich-content .tiptap a,
+.rich-content .tiptap .atlasia-link {
+  color: #cf8b95;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.rich-content .tiptap a:hover {
+  color: #e2aeb6;
+}
+
+.rich-content .tiptap code {
+  background: #24262a;
+  border: 1px solid #34363b;
+  border-radius: 0.3rem;
+  color: #f0d6da;
+  padding: 0.1rem 0.3rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.86em;
+}
+
+.rich-content .tiptap pre {
+  background: #0b0c0e;
+  border: 1px solid #2a2c31;
+  border-radius: 0.65rem;
+  color: #d6d8dd;
+  overflow-x: auto;
+  padding: 0.9rem 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.84rem;
+}
+
+.rich-content .tiptap pre code {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  padding: 0;
+}
+
+.rich-content .tiptap hr {
+  border: 0;
+  border-top: 1px solid #34363b;
+}
+
+.editor-content .tiptap {
+  min-height: 285px;
+  padding: 1.1rem 1.2rem 1.4rem;
+}
+
+.editor-content .tiptap p.is-editor-empty:first-child::before {
+  color: #5f6269;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.viewer-content .tiptap {
+  min-height: 0;
+}
+
+.viewer-content .tiptap > * + * {
+  margin-top: 0.55rem;
+}
+
+[data-sonner-toast] {
+  border-color: #34363b !important;
+  font-family: inherit !important;
+}

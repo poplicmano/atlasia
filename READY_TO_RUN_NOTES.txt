@@ -1,0 +1,19 @@
+ATLASIA Announcement Manager — private ready-to-run archive
+
+This ZIP includes .env.local and LOCAL_CREDENTIALS.txt with freshly generated local secrets.
+DO NOT SHARE THIS ZIP.
+
+Quick start:
+
+  cd atlasia
+  npm install
+  npm run env:check
+  npm run dev
+
+Open http://localhost:3000/login and use the credentials in LOCAL_CREDENTIALS.txt.
+The first start creates data/atlasia.db and seeds categories/channels. Add real Discord webhook
+URLs in Destinations before publishing.
+
+For production, rotate the secrets and set environment variables through your hosting platform.
+
+Update: all dialog panels are now centered and scroll inside the viewport.
